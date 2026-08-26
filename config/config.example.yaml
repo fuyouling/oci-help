@@ -1,0 +1,27 @@
+oci:
+  # OCI SDK 配置文件路径（含 API 密钥位置），默认 config/oci_config
+  config_file: config/oci_config
+  # 使用的 profile 名称
+  profile: DEFAULT
+
+monitor:
+  # 轮询间隔（秒）
+  poll_interval: 300
+  # 要扫描的 compartment OCID 列表；留空则扫描 tenancy 根 compartment
+  compartments: []
+  # 仅作用于匹配的 display name（正则）；留空表示全部
+  name_filter: ""
+  # true 时仅记录将要执行的操作，不真正开启实例
+  dry_run: false
+
+telegram:
+  # Telegram Bot token，通过 @BotFather 创建 bot 后获取；留空则禁用通知
+  token: ""
+  # 接收通知的 Telegram 用户/聊天 ID，通过 @myidbot 发送 /start 获取；留空则禁用通知
+  user_id: ""
+  # 程序启动成功时发送通知
+  notify_on_start: true
+  # 启动实例失败时发送通知（可配置是否发送）
+  notify_on_failure: true
+  # 启动实例成功时发送通知
+  notify_on_success: true

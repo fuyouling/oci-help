@@ -1,0 +1,17 @@
+# OCI Python SDK 配置文件示例
+# 复制为 config/oci_config 后填入真实值（oci_config 已被 gitignore）
+# 字段说明：https://docs.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm
+
+[DEFAULT]
+user=ocid1.user.oc1..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+fingerprint=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx
+key_file=config/oci_api_key.pem
+tenancy=ocid1.tenancy.oc1..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+region=ap-tokyo-1
+
+[OTHER_PROFILE]
+user=ocid1.user.oc1..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+fingerprint=xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx
+key_file=config/oci_api_key.pem
+tenancy=ocid1.tenancy.oc1..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+region=us-ashburn-1

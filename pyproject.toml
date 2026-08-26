@@ -1,0 +1,33 @@
+[project]
+name = "oci-help"
+version = "0.1.0"
+description = "OCI 操作辅助工具：查询实例、按可配置时间轮询并自动开启已停止的实例"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "oci>=2.120.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.5",
+]
+
+[project.scripts]
+oci-help = "ocihelper.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["ocihelper*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
