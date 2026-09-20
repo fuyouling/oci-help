@@ -201,6 +201,11 @@ oci-help monitor --once                     # 立即尝试开启一次后退出
 oci-help monitor --poll-interval 120 --name-filter '^test-'
 ```
 
+### 后台运行
+```shell
+bash setup.sh
+```
+
 ### 配置优先级
 
 命令行参数 > `config/config.yaml` > `config/config.example.yaml`/默认值。
